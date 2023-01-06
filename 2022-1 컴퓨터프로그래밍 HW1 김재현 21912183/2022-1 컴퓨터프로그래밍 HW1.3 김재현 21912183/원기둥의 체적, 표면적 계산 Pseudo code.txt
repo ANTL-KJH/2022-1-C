@@ -1,0 +1,11 @@
+Algorithm calculator for volume and surface area of cylinder
+//input arguments: radius, height
+// output result : volume, surface
+define PI 3.141592
+1: double radius = 0.0, height = 0.0;
+2: double volume = 0.0, surface = 0.0;
+3: input radius, height;
+4: volume = PI * radius * radius * height;
+5: surface = 2 * PI * radius * radius + 2 * PI * radius * height;
+6: printout area and circumference of right triangle;
+7: end

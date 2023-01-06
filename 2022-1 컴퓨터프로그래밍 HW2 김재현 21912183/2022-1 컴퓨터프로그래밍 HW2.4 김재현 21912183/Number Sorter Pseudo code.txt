@@ -1,0 +1,26 @@
+Algorithm Number Sorter
+//input arguments: input_number
+// output result : input_number, ten_thousand, thousand, hundred, ten, one
+1: int input_number = 0;
+2: int ten_thousand = 0, thousand = 0;
+3: int hundred = 0, ten = 0, one = 0;
+4: input input_number
+5: ten_thousand = input_number / 10000;
+6: thousand = (input_number - ten_thousand * 10000) / 1000;
+7: hundred = (input_number - ten_thousand * 10000 - thousand * 1000) / 100;
+8: ten = (input_number - ten_thousand * 10000 - thousand * 1000 - hundred * 100) / 10;
+9: one = (input_number - ten_thousand * 10000 - thousand * 1000 - hundred * 100 - ten * 10);
+10: if (ten_thousand != 0)	//만의 자리가 0이면 아래 출력으로 이동
+11: 	printout input_number, ten_thousand, thousand, hundred, ten, one;
+12: else
+13: 	if (thousand != 0)	//천의 자리가 0이면 아래 출력으로 이동
+14: 		printout input_number, thousand, hundred, ten, one;
+15:	else
+16: 		if (hundred != 0)
+17:			printout input_number, hundred, ten, one;
+18:		else
+19:			if (ten != 0)
+20:				printout input_number, ten, one;
+21:			else	//십의 자리까지 0이면 일의 자리만 출력
+22:				printout input_number, one;
+23: end

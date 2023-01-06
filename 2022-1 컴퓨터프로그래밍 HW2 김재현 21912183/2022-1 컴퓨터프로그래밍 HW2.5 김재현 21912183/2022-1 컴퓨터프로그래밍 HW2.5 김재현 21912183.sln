@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2022-1 컴퓨터프로그래밍 HW2.5 김재현 21912183", "2022-1 컴퓨터프로그래밍 HW2.5 김재현 21912183\2022-1 컴퓨터프로그래밍 HW2.5 김재현 21912183.vcxproj", "{12D821EB-4466-479A-BC0E-5DE91FED49D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Debug|x64.ActiveCfg = Debug|x64
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Debug|x64.Build.0 = Debug|x64
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Debug|x86.ActiveCfg = Debug|Win32
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Debug|x86.Build.0 = Debug|Win32
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Release|x64.ActiveCfg = Release|x64
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Release|x64.Build.0 = Release|x64
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Release|x86.ActiveCfg = Release|Win32
+		{12D821EB-4466-479A-BC0E-5DE91FED49D7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A0DEB6F-E13A-4894-B7C6-4B3D105EBD3F}
+	EndGlobalSection
+EndGlobal

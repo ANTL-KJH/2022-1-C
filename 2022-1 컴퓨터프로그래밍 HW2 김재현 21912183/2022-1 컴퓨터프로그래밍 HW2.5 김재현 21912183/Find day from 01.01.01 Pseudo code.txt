@@ -1,0 +1,60 @@
+Algorithm Find the day of week from 01.01.01
+//input arguments: year, month, day
+// output result : year, month, day, weekday_names
+
+1: enum WEEKDAY { SUN, MON, TUE, WED, THR, FRI, SAT };
+2: const char* weekday_names[] = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+
+3: int year, month, day, result, day_of_week;
+4: input year, month, day;
+5: result = counting_days(year, month, day);
+6: printout year, month, day, result;
+7: day_of_week = result % 7;	//요일 연산
+8: printout year, month, day, weekday_names[day_of_week];
+
+9: counting_days(int y, int m, int d)
+10: {
+11:	int count = 0, i;
+12:	for (i = 1; i < y; i++)	//입력한 년의 전년도까지 날짜를 계산
+13:	{
+14:		if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0))
+15:			count = count + 366;
+16:		else
+17:			count = count + 365;
+18:	}
+19:	for (i = 1; i < m; i++)	//입력한 달의 전달까지 날짜를 계산
+20:	{
+21:		switch (i)
+22:		{
+23:			case 1:
+24:			case 3:
+25:			case 5:
+26:			case 7:
+27:			case 8:
+28:			case 10:
+29:				count = count + 31;
+30:				break;
+31:			case 4:
+32:			case 6:
+33:			case 9:
+34:			case 11:
+35:				count = count + 30;
+36:				break;
+37:			case 2:
+38:				if (((y % 4 == 0) && (y % 100 != 0)) || (y % 400 == 0))
+39:				{
+40:					count = count + 29;
+41:					break;
+42:				}
+43:				else
+44:				{
+45:					count = count + 28;
+46:					break;
+47:				}
+48:			}
+49:	}
+50:	for (i = 0; i < d; i++)
+51:		count++;
+52:	return count;
+53: }
+54: end

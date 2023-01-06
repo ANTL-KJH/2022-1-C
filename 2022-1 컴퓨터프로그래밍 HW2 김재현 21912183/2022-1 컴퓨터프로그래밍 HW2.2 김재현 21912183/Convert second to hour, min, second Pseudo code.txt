@@ -1,0 +1,12 @@
+Algorithm convert second to hour, min, second
+//input arguments: input_second
+// output result : hour, min, sec
+#define MINUTE_3600 3600
+#define SECOND_60 60
+1: int input_second = 0, int sec = 0, int min = 0, int hour = 0;
+2: input input_second;
+3: sec = input_second % SECOND_60;	//주어진 시간을 60으로 남은 나머지는 초에 해당함
+4: hour = input_second / 3600;	//주어진 시간을 3600으로 나눈 몫은 시간에 해당함
+5: min = (input_second - (hour * MINUTE_3600)) / SECOND_60;	//주어진 시간에서 시간을 빼고 60으로 나눈 몫은 분에 해당함
+6: printout(hour, min, sec);
+17: end

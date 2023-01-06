@@ -1,0 +1,12 @@
+Algorithm calculator for area and circumference of right triangle
+//input arguments: base, height
+//output result : area, circum
+1: double base = 0.0, height = 0.0;
+2: double circum = 0.0, area = 0.0;
+3: double hypo = 0.0;
+4: input base, height;
+5: area = 0.5 * base * height;
+6: hypo = root(square(base) + square(height));
+7: circum =base + height + hypo;
+8: printout area and circumference of right triangle;
+9: end

@@ -1,0 +1,20 @@
+Algorithm Find best, worst, avg grade of students
+//input arguments: grade[10]
+// output result : max, min, avg
+1: int max = -2147483648, min = 2147483647, sum = 0;	//max, min의 초기값은 각각 정수형의 최소,최대값
+2: int grade[10];
+3: int i = 0;
+4: double avg = 0.0;
+5: for (i = 0; i < 10; i++)
+6: 	input grade[i];
+7: i = 0;
+8: while (i < 10)	//최대값, 최소값을 계산
+9:		if (min > grade[i])
+10:			min = grade[i];
+11:		if (max < grade[i])
+12:			max = grade[i];
+13:		sum += grade[i];
+14:		i++;
+15: avg = sum / 10.0;//평균값을 계산한다.
+16: printout max, min, avg of grade;
+17: end

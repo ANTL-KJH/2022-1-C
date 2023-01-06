@@ -1,0 +1,14 @@
+Algorithm Real number Calculator
+//input arguments: input_second
+// output result : hour, min, sec
+1: double input_number_1 = 0.0, input_number_2 = 0.0;
+2: double sum = 0.0, minus = 0.0;
+3: double multiplication = 0.0, division = 0.0;
+4: input input_number_1;	//실수 1 입력
+5: input input_number_2;	//실수 2 입력
+6: sum = input_number_1 + input_number_2;
+7: minus = input_number_1 - input_number_2;
+8: multiplication = input_number_1 * input_number_2;
+9: division = input_number_1 / input_number_2;
+10: printout sum, minus, multiplication, division;
+11: end
